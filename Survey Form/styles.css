@@ -5,9 +5,15 @@ body {
     background-color: hsla(15, 100%, 50%, .3);
     /* Decide on a color later */
     font-family: Comfortaa, sans-serif;
+    font-family: asuran;
     font-size: 1rem;
     line-height: 1.5;
 }
+
+/* @font-face {
+    font-family: asuran;
+    src: url(asura\ script\ custom.ttf);
+} */
 
 h1,
 p {
