@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+<body>
+<h1 id="title">Kevin's Survey on Something</h1>
+<p id="description">Hello there, would you kindly fill this out? :)</p>
+<form id="survey-form"
+      action="https://docs.google.com/document/d/1naVsB3U-kF4XcSthX5mTFbKurG8jCKeA5AWUP8wOKlI/edit?usp=sharing">
+    <fieldset>
+        <div class="form-group">
+            <label id="name-label">Name <input type="text" name="name" required id="name"
+                                               placeholder="Hey there whats your name?"/></label>
+        </div>
+        <div class="form-group">
+            <label id="email-label">Email <input type="email" name="email" required id="email"
+                                                 placeholder="got email?"/></label>
+        </div>
+        <div class="form-group">
+            <label id="number-label">Favorite Number? (optional)<input type="number" min="0"
+                                                                       max="1000000" id="number"
+                                                                       placeholder="Mine is 8, like the days in a week ;)"/></label>
+        </div>
+        <div class="form-group">
+            <label>How did you hear about me?
+                <select name="referrer" id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="Github">GitHub</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Resume">Resume</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-group">
+            What are you taking this on?
+            <label>
+                <input type="radio" name="device-used" required value="PC" class="inline"/>
+                PC
+            </label>
+            <label>
+                <input type="radio" name="device-used" required value="Phone" class="inline"/>
+                Phone
+            </label>
+            <label>
+                <input type="radio" name="device-used" required value="Potato" class="inline"/>
+                Potato
+            </label>
+            <label>
+                <input type="radio" name="device-used" required value="Smart Fridge" class="inline"/>
+                Smart Fridge
+            </label>
+        </div>
+        <div class="form-group">Pets you like?
+            <label>
+                <input type="Checkbox" name="favorite-pet" value="Doggo" class="inline"/>
+                Doggo
+            </label>
+            <label>
+                <input type="Checkbox" name="favorite-pet" value="Kitty" class="inline"/>
+                Kitty
+            </label>
+            <label>
+                <input type="Checkbox" name="favorite-pet" value="Leezard" class="inline"/>
+                Leezard
+            </label>
+            <label>
+                <input type="Checkbox" name="favorite-pet" value="None" class="inline"/>
+                None
+            </label>
+        </div>
+        <div class="form-group">
+            Did you enjoy the survey?
+            <label>
+                <input type="Checkbox" name="enjoy" value="enjoy" class="inline"/>
+                Of course I did! :)
+            </label>
+        </div>
+        <div>
+            <label>
+                Tell me a fun fact:
+                <textarea class="block" name="fun-fact" rows="3" cols="30"
+                          placeholder="Fun-fact The world’s first computer programmer was a renowned female mathematician..."></textarea>
+            </label>
+        </div>
+    </fieldset>
+    <!--  <button class="survey-form" id="submit">Submit</button> -->
+    <input type="submit" class="survey-form" value="Submit" id="submit">
+    <!-- an alternate submit button -->
+</form>
+</body>
+</html>
