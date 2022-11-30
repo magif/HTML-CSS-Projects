@@ -59,8 +59,14 @@ console.log(palindrome("!")); //true technically = ""
 console.log(palindrome("abc")); //false
 console.log(palindrome("abc                       a")); //false
 console.log(palindrome("abc!@#$%^&* 1 lol  1   #$%^&*()CBA")); //true
-
 console.log(palindrome("kayak")); //true
+console.log(palindrome3('applppa'));// True
+
+let AlphaNumRegex = new RegExp(/[^a-zA-Z0-9]/g);
+console.log("12321".toLowerCase().replace(AlphaNumRegex, ""));
+console.log(palindrome("12321"));
+
+
 
 
 /**
